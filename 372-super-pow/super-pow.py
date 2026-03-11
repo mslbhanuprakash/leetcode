@@ -3,7 +3,8 @@ class Solution(object):
         mod=1337
         res=1
         for digit in b:
-            res=pow(res,10,mod)*pow(a,digit,mod)%mod
+            res=(res**10)*(a**digit)
+            res=res%mod
         return res
        
         

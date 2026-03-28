@@ -1,0 +1,10 @@
+class Solution(object):
+    def countKeyChanges(self, s):
+        count=0
+        for i in range(1,len(s)):
+
+            if s[i].lower()!=s[i-1].lower():
+                count=count+1
+        return count    
+        
+        
